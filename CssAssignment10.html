@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 10: Responsive Images</title>
+    <style>
+        .aa {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="imageNature.jpg"
+        srcset="nat1.jpg 400w, 
+               nat3.jpg 600w, 
+               nat4.jpg 800w"
+        sizes="(max-width: 600px) 90vw, 600px"
+        class="aa" alt="Nature Image">
+</body>
+
+</html>

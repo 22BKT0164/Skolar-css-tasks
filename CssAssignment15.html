@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 15: Transforms</title>
+    <style>
+        .aa {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin: 20px;
+            transform: rotate(30deg) translate(50px, 50px) scale(1.2) skew(10deg, 10deg);
+            transition: transform 1s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="aa"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+                document.querySelector('.aa').style.transform = 'rotate(0) translate(0) scale(1) skew(0)';
+            }, 100); 
+        });
+    </script>
+</body>
+</html>

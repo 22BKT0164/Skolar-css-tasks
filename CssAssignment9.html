@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 9: Media Queries</title>
+    <style>
+        .aa {
+            font-size: 16px;
+            background-color: pink;
+            padding: 10px;
+        }
+
+        .bb {
+            font-size: 18px;
+            background-color: yellow;
+            padding: 10px;
+        }
+
+        .cc {
+            font-size: 20px;
+            background-color: grey;
+            padding: 10px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .aa, .bb, .cc {
+                font-size: 14px;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .aa, .bb, .cc {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="aa">Nature whispers in the breeze.</div>
+    <div class="bb">In every walk with nature, one receives far more than he seeks.</div>
+    <div class="cc">Explore the wilderness</div>
+</body>
+</html>

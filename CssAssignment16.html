@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 16: Pseudo-Classes and Pseudo-Elements</title>
+    <style>
+        .aa, .bb, .cc {
+            width: 200px;
+            height: 100px;
+            background-color: yellow;
+            text-align: center;
+            line-height: 100px;
+            position: relative;
+            overflow: hidden;
+            margin: 20px;
+            cursor: pointer;
+        }
+
+        .aa::before, .bb::before, .cc::before {
+            content: "Hover to reveal";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background-color: pink;
+            transition: left 0.3s ease-in-out;
+            line-height: 100px;
+        }
+
+        .aa:hover::before, .bb:hover::before, .cc:hover::before {
+            left: 0;
+        }
+
+        .aa:focus::before, .bb:focus::before, .cc:focus::before {
+            left: 0;
+        }
+
+        .aa:active::before, .bb:active::before, .cc:active::before {
+            background-color: lightblue;
+        }
+
+        .aa:nth-child(even), .bb:nth-child(even), .cc:nth-child(even) {
+            background-color: lightgreen;
+        }
+
+        .aa::after, .bb::after, .cc::after {
+            content: "Click me!";
+            display: block;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: lightcoral;
+            color: white;
+            padding: 5px 0;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .aa:hover::after, .bb:hover::after, .cc:hover::after {
+            transform: translateY(-100%);
+        }
+    </style>
+</head>
+<body>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HOVER TO SEE EFFECTS</p>
+    <div class="aa"></div>
+    <div class="bb"></div>
+    <div class="cc"></div>
+</body>
+</html>

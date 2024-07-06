@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5: Flexbox Basics</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+            border: 2px solid pink;
+            padding: 20px;
+            flex-direction: row; 
+        }
+
+        .aa, .bb, .ss {
+            padding: 20px;
+            margin: 10px;
+            background-color: yellow;
+            color: grey;
+            text-align: center;
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="aa">Sunset over the mountains</div>
+        <div class="bb">Fields of golden wheat</div>
+        <div class="ss">A rainbow after the rain</div>
+    </div>
+</body>
+</html>

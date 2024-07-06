@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 7: Grid Basics</title>
+    <style>
+        .aa {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            grid-gap: 10px; 
+            background-color: pink;
+            padding: 10px;
+        }
+
+        .bb {
+            background-color: yellow;
+            padding: 10px;
+        }
+
+        .cc {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: auto;
+            grid-gap: 10px;
+            background-color: grey;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="aa">
+        <div class="bb">The poetry of the earth is never dead.</div>
+        <div class="bb">Nature is pleased with simplicity.</div>
+        <div class="bb">Nature always wears the colors of the spirit.</div>
+    </div>
+    <div class="cc">
+        <div class="bb">Study nature, love nature, stay close to nature. It will never fail you.</div>
+        <div class="bb">Adopt the pace of nature: her secret is patience.</div>
+    </div>
+</body>
+</html>

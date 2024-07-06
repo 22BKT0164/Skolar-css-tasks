@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 8: Advanced Grid</title>
+    <style>
+        .aa {
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "sidebar main"
+                "footer footer";
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: auto 1fr auto;
+            gap: 10px;
+            background-color: pink;
+            padding: 10px;
+        }
+
+        .bb {
+            grid-area: header;
+            background-color: yellow;
+            padding: 10px;
+        }
+
+        .cc {
+            grid-area: sidebar;
+            background-color: yellow;
+            padding: 10px;
+        }
+
+        .dd {
+            grid-area: main;
+            background-color: grey;
+            padding: 10px;
+        }
+
+        .ee {
+            grid-area: footer;
+            background-color: grey;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="aa">
+        <header class="bb">Nature's beauty</header>
+        <aside class="cc">Explore the wilderness</aside>
+        <main class="dd">In every walk with nature, one receives far more than he seeks.</main>
+        <footer class="ee">Nature always wears the colors of the spirit.</footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 20: Building a Custom CSS Framework</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 20px;
+            padding: 20px;
+            background-color: pink;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .col-6 {
+            grid-column: span 6;
+        }
+
+        .card {
+            background-color: yellow;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .btn {
+            background-color: yellow;
+            color: pink;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: pink;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="col-6">
+            <div class="card">
+                <h2>Card Title</h2>
+                <p>This is a sample card content.</p>
+                <button class="btn">Button</button>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="card">
+                <h2>Card Title</h2>
+                <p>This is another sample card content.</p>
+                <button class="btn">Button</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

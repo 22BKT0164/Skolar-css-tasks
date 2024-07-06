@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 14: Animations</title>
+    <style>
+        @keyframes slidein {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        .aa {
+            animation: slidein 1s ease-in-out;
+            background-color: pink;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        @keyframes colorchange {
+            0% {
+                background-color: pink;
+            }
+            50% {
+                background-color: yellow;
+            }
+            100% {
+                background-color: grey;
+            }
+        }
+
+        .bb {
+            animation: colorchange 3s infinite ease-in-out;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .cc {
+            animation-name: slidein;
+            animation-duration: 1.5s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0.5s;
+            animation-iteration-count: 2;
+            background-color: lightblue;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="aa">Nature's beauty</div>
+    <div class="bb">In every walk with nature, one receives far more than he seeks.</div>
+    <div class="cc">Explore the wilderness</div>
+</body>
+</html>

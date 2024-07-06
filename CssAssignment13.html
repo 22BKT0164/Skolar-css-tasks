@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 13: Transitions</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .aa, .bb, .cc, .dd {
+            transition: all 0.5s ease-in-out;
+            padding: 20px;
+            border: 2px solid black;
+        }
+
+        .aa {
+            background-color: pink;
+            width: 200px;
+        }
+
+        .aa.transformed {
+            background-color: yellow;
+            width: 300px;
+        }
+
+        .bb {
+            color: white;
+            background-color: grey;
+        }
+
+        .bb.transformed {
+            color: black;
+            transform: rotate(10deg);
+        }
+
+        .cc {
+            background-color: grey;
+            height: 100px;
+            margin-left: 0;
+        }
+
+        .cc.transformed {
+            height: 200px;
+            margin-left: 50px;
+        }
+
+        .dd {
+            background-color: pink;
+            width: 200px;
+            height: 100px;
+        }
+
+        .dd.transformed {
+            background-color: lightblue;
+            width: 250px;
+            height: 150px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="aa">Nature's beauty</div>
+        <div class="bb">In every walk with nature, one receives far more than he seeks.</div>
+        <div class="cc">Explore the wilderness</div>
+        <div class="dd">Nature always wears the colors of the spirit.</div>
+    </div>
+
+    <script>
+        window.onload = function() {
+            setTimeout(function() {
+                document.querySelector('.aa').classList.add('transformed');
+                document.querySelector('.bb').classList.add('transformed');
+                document.querySelector('.cc').classList.add('transformed');
+                document.querySelector('.dd').classList.add('transformed');
+            }, 100); // Delay in milliseconds
+        };
+    </script>
+</body>
+</html>
